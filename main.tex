@@ -54,7 +54,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-9pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -141,58 +141,58 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \resumesmall{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+      \textbf{Programming}{: C++, Verilog, C, VHDL, RISC-V, SystemVerilog, OpenGL, Python, Java, JavaScript, HTML/CSS, SQL, LaTeX} \\
+      \textbf{Hardware}{: FPGA, ESP32, IC Breadboard Circuits, Oscilloscope, Arduino, Raspberry Pi, ARM MBED, LaunchPad, 3D Printing} \\
+      \textbf{Frameworks}{: React, SFML, CUDA, PyTorch, AWS (S3, DynamoDB, EC2), Express, MongoDB, Pandas, Node.js, Kubernetes} \\
+      \textbf{Software}{: KiCAD, Altium, Cadence, Intel Altera Quartus II, NI LabVIEW, gRPC, TCP/UDP Tunnels, Blender, Autodesk Fusion 360/AutoCAD, SolidWorks, Visual Studio Code, GitHub, Wireshark, Adobe Creative Suite, Inkscape, Slack} \\
+      \textbf{Communication}{: Design proposals, technical reports, instruction manuals, presentations (large and small audiences)}
     }}
  \end{itemize}
 
 
-%-----------EXPERIENCE-----------
-\section{Experience}
+%-----------PROJECTS/RESEARCH-----------
+\section{Projects/Research}
   \resumeSubHeadingListStart
-
     \resumeSubheading
-      {Undergraduate Research Assistant}{June 2020 -- Present}
-      {Texas A\&M University}{College Station, TX}
+      {AeroCore-V - Hardware-Accelerated SoC for Autonomous UAVs}{August 2025 - Present}
+      {SiliconJackets Project Lead}{Atlanta, GA}
       \resumeItemListStart
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
-        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    \resumeSubheading
-      {Information Technology Support Specialist}{Sep. 2018 -- Present}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Communicate with managers to set up campus computers used on campus}
-        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
-    \resumeItemListEnd
-
-    \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-        \resumeItem{Developed a game in Java to test the generated dungeons}
-        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+        \resumeItem{Designed a RISC-V SoC in SystemVerilog with custom ALU extensions for single-cycle PID control math, tailored for low-latency flight adjustments on a DE10 validated with Intel Quartus Prime}
+        \resumeItem{Implemented a two-level cache system with an LRU replacement policy optimized for high-frequency I2C/SPI GPS and IMU data streams from an ESP32 to reduce memory stalls by 62\% compared to a single-level cache design}
+        \resumeItem{Developed a virtual memory system with a protected frame table to isolate flight-critical control routines from telemetry code, ensuring system resilience against page faults}
+        \resumeItem{Orchestrated a priority-based thread scheduler to manage flight loops and telemetry tasks, validated through a networked OpenGL Digital Twin simulation of UAV physics}
       \resumeItemListEnd
 
+    \resumeSubheading
+      {Georgia Tech HIVE Makerspace Student Leader}{August 2024 - Present}
+      {Georgia Tech Hive Makerspace Volunteers}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Deployed a multi-device print manager to automate jobs on a FIFO basis, increasing the operational uptime of the free-to-use 12-unit Bambu Lab 3D print farm for the Georgia Tech student body}
+        \resumeItem{Facilitate workshops and created training resources that contributed to a 20\% increase in student participation}
+        \resumeItem{Architecting a full-stack inventory management system using an AWS RDS backend to track materials in the cloud with S3 and DynamoDB to enable a student electronics rental program, aiming to reduce annual student costs}
+        \resumeItem{Instruct $\sim$40 students per week on advanced design and fabrication workflows, including 3D CAD/slicing, circuit analysis with oscilloscopes, laser cutter operation, PCB design and manufacturing (taking a blank FR4 sheet to an operational PCB)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {High-Performance Heterogeneous Computing Infrastructure}{June 2022 - July 2025}
+      {BlendFarm Project Leader}{Ashburn, VA}
+      \resumeItemListStart
+        \resumeItem{Assembled two 2.5kW parallel computing systems from the component level, integrating twelve 12GB GDDR6 GPUs and modifying voltage curves to bypass LHR limiters, achieving a 73\% hash rate improvement}
+        \resumeItem{Overcame thermal throttling by designing and CNC-fabricating monolithic aluminum water blocks with Solidworks to cool a 6-GPU array, reducing core temperatures by over 15°C under sustained 100\% load}
+        \resumeItem{Scripted a distributed render farm using C++ and SFML to coordinate massive frame rendering tasks across a network}
+        \resumeItem{Optimized task allocation using TCP/UDP socket tunnels and a custom jitter buffer implementation to ensure reliable data synchronization between the master node and rendering clients}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Calcium-Carrageenan-Alginate Saline Soluble Polymer Research}{November 2022 - July 2024}
+      {Academy of Science International Research Collaboration}{Ashburn, VA | Daegu, South Korea}
+      \resumeItemListStart
+        \resumeItem{Synthesized a saline-soluble polymer as a novel alternative to currently used petrochemical-based plastics as a means of preventing marine pollution}
+        \resumeItem{Modeled and fabricated 3D-generated molds using filament and resin printers for synthesizing films}
+        \resumeItem{Worked with a tensile tester to measure Young’s modulus, conducting solution-casting film formation, and formulating hydrogels through incubation}
+        \resumeItem{Led collaboration efforts with South Korean research teams for two years to synthesize samples and complete testing}
+        \resumeItem{Collected over 150 trials of data and was awarded the Yale Outstanding Project award at RSEF in Spring of 2023}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
