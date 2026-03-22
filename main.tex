@@ -62,8 +62,9 @@
 
 %-------------------------
 % Custom commands
+\newcommand{\resumesmall}{\fontsize{9.5pt}{11.5pt}\selectfont}
 \newcommand{\resumeItem}[1]{
-  \item\small{
+  \item\resumesmall{
     {#1 \vspace{-2pt}}
   }
 }
@@ -72,21 +73,21 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\resumesmall#3} & \textit{\resumesmall #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{\resumesmall#1} & \textit{\resumesmall #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \resumesmall#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -121,11 +122,12 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Southwestern University}{Georgetown, TX}
-      {Bachelor of Arts in Computer Science, Minor in Business}{Aug. 2018 -- May 2021}
-    \resumeSubheading
-      {Blinn College}{Bryan, TX}
-      {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {B.S. Computer Engineering, GPA: 3.79}{August 2023 -- December 2026}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Data Structures and Algorithms, Embedded Systems Design, Advanced Microarchitecture Design}
+        \resumeItem{Leadership: Captain of GT Ramblin' Raas, GTXR Executive Board, SiliconJackets Digital Design Team Lead}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -203,7 +205,7 @@
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
+    \resumesmall{\item{
      \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
      \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
      \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
