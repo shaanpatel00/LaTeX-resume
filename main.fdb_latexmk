@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1774150594.92876 "/Users/shaanpatel/Documents/Github/LaTeX-resume/main.tex" "main.pdf" "main" 1774150595.46798 0
-  "/Users/shaanpatel/Documents/Github/LaTeX-resume/main.tex" 1774150594.74034 8065 c5b2116d3d079a8d41f5e67822f11c5c ""
+["pdflatex"] 1774152839.25253 "/Users/shaanpatel/Documents/Github/LaTeX-resume/main.tex" "main.pdf" "main" 1774152839.80283 0
+  "/Users/shaanpatel/Documents/Github/LaTeX-resume/main.tex" 1774152837.19416 7078 7ae5554431410fe0ebf80bae66685feb ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/map/fontname/texfonts.map" 1772380719 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1772380719 5541360 f183aac233c4cd1e5ef882fcbe8e7096 ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1772380719 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -35,7 +35,6 @@
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1772380719 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1772380719 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1772380719 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
-  "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb" 1772380719 32442 c975af247b6702f7ca0c299af3616b80 ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb" 1772380719 36310 f5ddc6715cc60deb16d9db5ded6a9391 ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1772380719 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/generic/babel-english/english.ldf" 1772380719 7008 9ff5fdcc865b01beca2b0fe4a46231d4 ""
@@ -89,9 +88,9 @@
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/tex/latex/url/url.sty" 1772380719 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-dist/web2c/texmf.cnf" 1772380719 43633 14bbc273cebd985e64ab1a698333eaf9 ""
   "/opt/homebrew/Cellar/texlive/20260301/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1772380719 3636958 d2062700e4b629ba1467c28603bfdc8d ""
-  "main.aux" 1774150595.41009 711 d776b8cadf0903cda9f4356d8076bd81 "pdflatex"
-  "main.out" 1774150595.41105 390 8178769a591dae54593be5dc5893bd68 "pdflatex"
-  "main.tex" 1774150594.74034 8065 c5b2116d3d079a8d41f5e67822f11c5c ""
+  "main.aux" 1774152839.75057 712 9a3f716a62050fdf2a61872db1035fc2 "pdflatex"
+  "main.out" 1774152839.75122 395 537865a0af2283ef309d8d713615624a "pdflatex"
+  "main.tex" 1774152837.19416 7078 7ae5554431410fe0ebf80bae66685feb ""
   (generated)
   "main.aux"
   "main.log"
