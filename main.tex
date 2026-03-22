@@ -62,10 +62,10 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumesmall}{\fontsize{9.5pt}{11.5pt}\selectfont}
+\newcommand{\resumesmall}{\fontsize{9pt}{11.2pt}\selectfont}
 \newcommand{\resumeItem}[1]{
   \item\resumesmall{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-2.75pt}}
   }
 }
 
@@ -95,9 +95,9 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -113,14 +113,14 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Shaan Patel} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Shaan Patel} \\ \vspace{2pt}
     \small 571-439-9302 $|$ spatel3050@gatech.edu $|$ Ashburn, VA $|$ US Citizen $|$ shaanpatel00.github.io $|$ linkedin.com/in/shaanpatel00
 \end{center}
 
 %-----------OBJECTIVE-----------
 \section{Objective}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \resumesmall{\item{Specialized in full-cycle hardware development, from FPGA design to PCB fabrication. Proficient in Python, C++, and SystemVerilog with a background in GPU programming and VLSI design.}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \resumesmall{\item{Third-year Computer Engineering student specializing in computing hardware and emerging architectures. I bring an end-to-end approach to creating complex systems, and am seeking a challenging internship in computer architecture, embedded systems, or hardware design for Summer 2026.}}
  \end{itemize}
 
 
@@ -139,19 +139,20 @@
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0.05in, label={}]
     \resumesmall{\item{
       \textbf{Programming}{: C++, Verilog, C, VHDL, RISC-V, SystemVerilog, OpenGL, Python, Java, JavaScript, HTML/CSS, SQL, LaTeX} \\
+      \textbf{Platforms}{: Linux (Ubuntu, Slackware, Debian), Red Hat (OpenStack, CloudForms), OpenVMS, Solaris, Windows, MacOS} \\
       \textbf{Hardware}{: FPGA, ESP32, IC Breadboard Circuits, Oscilloscope, Arduino, Raspberry Pi, ARM MBED, LaunchPad, 3D Printing} \\
       \textbf{Frameworks}{: React, SFML, CUDA, PyTorch, AWS (S3, DynamoDB, EC2), Express, MongoDB, Pandas, Node.js, Kubernetes} \\
-      \textbf{Software}{: KiCAD, Altium, Cadence, Intel Altera Quartus II, NI LabVIEW, gRPC, TCP/UDP Tunnels, Blender, Autodesk Fusion 360/AutoCAD, SolidWorks, Visual Studio Code, GitHub, Wireshark, Adobe Creative Suite, Inkscape, Slack} \\
+      \textbf{Software}{: KiCAD, Altium, Cadence, Intel Altera Quartus II, NI LabVIEW, gRPC, TCP/UDP Tunnels, Blender, Autodesk Fusion 360/AutoCAD, SolidWorks, Visual Studio Code, GitHub, Wireshark, Adobe Creative Suite, Inkscape, Slack, } \\
       \textbf{Communication}{: Design proposals, technical reports, instruction manuals, presentations (large and small audiences)}
     }}
  \end{itemize}
 
 
-%-----------PROJECTS/RESEARCH-----------
-\section{Projects/Research}
+%-----------EXPERIENCE-----------
+\section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {AeroCore-V - Hardware-Accelerated SoC for Autonomous UAVs}{August 2025 - Present}
@@ -165,7 +166,7 @@
 
     \resumeSubheading
       {Georgia Tech HIVE Makerspace Student Leader}{August 2024 - Present}
-      {Georgia Tech Hive Makerspace Volunteers}{Atlanta, GA}
+      {Georgia Tech HIVE Makerspace Volunteers}{Atlanta, GA}
       \resumeItemListStart
         \resumeItem{Deployed a multi-device print manager to automate jobs on a FIFO basis, increasing the operational uptime of the free-to-use 12-unit Bambu Lab 3D print farm for the Georgia Tech student body}
         \resumeItem{Facilitate workshops and created training resources that contributed to a 20\% increase in student participation}
@@ -179,13 +180,13 @@
       \resumeItemListStart
         \resumeItem{Assembled two 2.5kW parallel computing systems from the component level, integrating twelve 12GB GDDR6 GPUs and modifying voltage curves to bypass LHR limiters, achieving a 73\% hash rate improvement}
         \resumeItem{Overcame thermal throttling by designing and CNC-fabricating monolithic aluminum water blocks with Solidworks to cool a 6-GPU array, reducing core temperatures by over 15°C under sustained 100\% load}
-        \resumeItem{Scripted a distributed render farm using C++ and SFML to coordinate massive frame rendering tasks across a network}
+        \resumeItem{Scripted a distributed render farm using C++ and SFML to coordinate large ray-tracing frame rendering across a network}
         \resumeItem{Optimized task allocation using TCP/UDP socket tunnels and a custom jitter buffer implementation to ensure reliable data synchronization between the master node and rendering clients}
       \resumeItemListEnd
 
     \resumeSubheading
       {Calcium-Carrageenan-Alginate Saline Soluble Polymer Research}{November 2022 - July 2024}
-      {Academy of Science International Research Collaboration}{Ashburn, VA | Daegu, South Korea}
+      {Academy of Science International Research Collaboration}{Ashburn, VA $|$ Daegu, South Korea}
       \resumeItemListStart
         \resumeItem{Synthesized a saline-soluble polymer as a novel alternative to currently used petrochemical-based plastics as a means of preventing marine pollution}
         \resumeItem{Modeled and fabricated 3D-generated molds using filament and resin printers for synthesizing films}
