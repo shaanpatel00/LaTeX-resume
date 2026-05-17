@@ -54,7 +54,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-9pt}\scshape\raggedright\large
+  \vspace{-11pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -69,31 +69,26 @@
   }
 }
 
+% Replaced tabular environment with hfill for ATS linear reading
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\resumesmall#3} & \textit{\resumesmall #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \textbf{#1} \hfill #2 \\
+    \textit{\resumesmall#3} \hfill \textit{\resumesmall #4}\par\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\resumesmall#1} & \textit{\resumesmall #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \textit{\resumesmall#1} \hfill \textit{\resumesmall #2}\par\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \resumesmall#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \resumesmall#1 \hfill #2\par\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{\small\textbullet}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -107,11 +102,6 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Shaan Patel} \\ \vspace{2pt}
     \small 571-439-9302 $|$ spatel3050@gatech.edu $|$ Ashburn, VA $|$ US Citizen $|$ shaanpatel00.github.io $|$ linkedin.com/in/shaanpatel00
@@ -120,7 +110,7 @@
 %-----------OBJECTIVE-----------
 \section{Objective}
  \begin{itemize}[leftmargin=0.05in, label={}]
-    \resumesmall{\item{Ambitious third-year Computer Engineering student specializing in computing hardware, VLSI design, and emerging architectures. Seeking a Summer 2026 internship in computer architecture, embedded systems, or hardware design to apply strong programming skills and an end-to-end approach to creating complex systems.}}
+    \resumesmall{\item{Ambitious third-year Computer Engineering student specializing in computing hardware, VLSI design, and emerging architectures. Seeking a Fall 2026 internship in computer architecture, embedded systems, or hardware design to apply strong programming skills and an end-to-end approach to creating complex systems.}}
  \end{itemize}
 
 
@@ -129,7 +119,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Georgia Institute of Technology}{Atlanta, GA}
-      {B.S. Computer Engineering, GPA: 3.79}{August 2023 -- December 2026}
+      {Bachelor of Science in Computer Engineering; GPA: 3.59}{August 2023 -- December 2026}
       \resumeItemListStart
         \resumeItem{Relevant Coursework: Data Structures and Algorithms, Embedded Systems Design, Advanced Microarchitecture Design}
         \resumeItem{Leadership: Captain of GT Ramblin' Raas, GTXR Executive Board, SiliconJackets Digital Design Team Lead}
@@ -141,12 +131,12 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \resumesmall{\item{
-      \textbf{Programming}{: C++, Verilog, C, VHDL, RISC-V, SystemVerilog, OpenGL, Python, Java, JavaScript, HTML/CSS, SQL, LaTeX} \\
-      \textbf{Platforms}{: Linux (Ubuntu, Slackware, Debian), Red Hat (OpenStack, CloudForms), OpenVMS, Solaris, Windows, MacOS} \\
-      \textbf{Hardware}{: FPGA, ESP32, IC Breadboard Circuits, Oscilloscope, Arduino, Raspberry Pi, ARM MBED, LaunchPad, 3D Printing} \\
-      \textbf{Frameworks}{: React, SFML, CUDA, PyTorch, AWS (S3, DynamoDB, EC2), Express, MongoDB, Pandas, Node.js, Kubernetes} \\
-      \textbf{Software}{: KiCAD, Altium, Cadence, Intel Altera Quartus II, NI LabVIEW, gRPC, TCP/UDP Tunnels, Blender, Autodesk Fusion 360/AutoCAD, SolidWorks, Visual Studio Code, GitHub, Wireshark, Adobe Creative Suite, Inkscape, Slack, } \\
-      \textbf{Communication}{: Design proposals, technical reports, instruction manuals, presentations (large and small audiences)}
+      \textbf{Programming}{: C++, Verilog, C, VHDL, RISC-V, SystemVerilog, OpenGL, Python, Java, JavaScript, HTML/CSS, SQL, LaTeX} \\[1pt]
+      \textbf{Platforms}{: Linux (Ubuntu, Slackware, Debian), Red Hat (OpenStack, CloudForms), OpenVMS, Solaris, Windows, MacOS} \\[1pt]
+      \textbf{Hardware}{: FPGA, ESP32, IC Breadboard Circuits, Oscilloscope, Arduino, Raspberry Pi, ARM MBED, LaunchPad, 3D Printing} \\[1pt]
+      \textbf{Frameworks}{: React, SFML, CUDA, PyTorch, AWS (S3, DynamoDB, EC2), Express, MongoDB, Pandas, Node.js, Kubernetes} \\[1pt]
+      \textbf{Software}{: KiCAD, Altium, Cadence, Intel Altera Quartus II, LTspice, NI LabVIEW, gRPC, TCP/UDP Tunnels, Blender, Autodesk Fusion 360/AutoCAD, SolidWorks, Onshape, Visual Studio Code, GitHub, Wireshark, Adobe Creative Suite, Inkscape, Slack} \\[1pt]
+      \textbf{Communication}{: Design proposals, technical reports, instruction manuals, presentations, email correspondence, training materials}
     }}
  \end{itemize}
 
@@ -155,18 +145,18 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {AeroCore-V - Hardware-Accelerated SoC for Autonomous UAVs}{August 2025 - Present}
-      {SiliconJackets Project Lead}{Atlanta, GA}
+      {AeroCore-V - Hardware-Accelerated SoC for Autonomous UAVs}{Atlanta, GA}
+      {SiliconJackets Project Lead}{August 2025 -- Present}
       \resumeItemListStart
         \resumeItem{Designed a RISC-V SoC in SystemVerilog with custom ALU extensions for single-cycle PID control math, tailored for low-latency flight adjustments on a DE10 validated with Intel Quartus Prime}
         \resumeItem{Implemented a two-level cache system with an LRU replacement policy optimized for high-frequency I2C/SPI GPS and IMU data streams from an ESP32 to reduce memory stalls by 62\% compared to a single-level cache design}
         \resumeItem{Developed a virtual memory system with a protected frame table to isolate flight-critical control routines from telemetry code, ensuring system resilience against page faults}
-        \resumeItem{Orchestrated a priority-based thread scheduler to manage flight loops and telemetry tasks, validated through a networked OpenGL Digital Twin simulation of UAV physics}
+        \resumeItem{Orchestrated a priority-based thread scheduler to manage UAV flight loops and telemetry tasks, achieving a 15\% latency reduction validated via a networked OpenGL Digital Twin physics simulation}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Georgia Tech HIVE Makerspace Student Leader}{August 2024 - Present}
-      {Georgia Tech HIVE Makerspace Volunteers}{Atlanta, GA}
+      {Georgia Tech HIVE Makerspace}{Atlanta, GA}
+      {Student Leader and Volunteer}{August 2024 -- Present}
       \resumeItemListStart
         \resumeItem{Instruct $\sim$40 students per week on advanced design and fabrication workflows, including 3D CAD/slicing, circuit analysis with oscilloscopes, laser cutter operation, PCB design and manufacturing (taking a blank FR4 sheet to an operational PCB)}
         \resumeItem{Deployed a multi-device print manager to automate jobs on a FIFO basis, increasing the operational uptime of the free-to-use 12-unit Bambu Lab 3D print farm for the Georgia Tech student body}
@@ -175,29 +165,26 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {High-Performance Heterogeneous Computing Infrastructure}{June 2022 - July 2025}
-      {BlendFarm Project Leader}{Ashburn, VA}
+      {High-Performance Heterogeneous Computing Infrastructure}{Ashburn, VA}
+      {BlendFarm Project Leader}{June 2022 -- July 2025}
       \resumeItemListStart
         \resumeItem{Assembled two 2.5kW parallel computing systems from the component level, integrating twelve 12GB GDDR6 GPUs and modifying voltage curves to bypass LHR limiters, achieving a 73\% hash rate improvement}
-        \resumeItem{Overcame thermal throttling by designing and CNC-fabricating monolithic aluminum water blocks with Solidworks to cool a 6-GPU array, reducing core temperatures by over 15°C under sustained 100\% load}
+        \resumeItem{Overcame thermal throttling by designing and CNC-fabricating monolithic aluminum water blocks with Solidworks to cool a 6-GPU array, reducing core temperatures by over 15$^\circ$C under sustained 100\% load}
         \resumeItem{Scripted a distributed render farm using C++ and SFML to coordinate large ray tracing frame rendering across a network}
         \resumeItem{Optimized task allocation using TCP/UDP socket tunnels and a custom jitter buffer implementation to ensure reliable data synchronization between the master node and rendering clients for faster computer graphics generation}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Calcium-Carrageenan-Alginate Saline Soluble Polymer Research}{November 2022 - July 2024}
-      {Academy of Science International Research Collaboration}{Ashburn, VA $|$ Daegu, South Korea}
+      {Academy of Science International Research}{Ashburn, VA}
+      {Research Collaborator}{November 2022 -- July 2024}
       \resumeItemListStart
         \resumeItem{Synthesized a saline-soluble polymer as a novel alternative to currently used petrochemical-based plastics as a means of preventing marine pollution}
-        \resumeItem{Modeled and fabricated 3D-generated molds using filament and resin printers for synthesizing films}
-        \resumeItem{Worked with a tensile tester to measure Young’s modulus, conducting solution-casting film formation, and formulating hydrogels through incubation}
-        \resumeItem{Led collaboration efforts with South Korean research teams for two years to synthesize samples and complete testing}
+        \resumeItem{Modeled and fabricated 3D-generated molds using filament and resin printers for synthesizing hydrogels through incubation}
+        \resumeItem{Worked with a tensile tester to measure Young’s modulus and SEM electron microscopy to analyze sample composition}
+        \resumeItem{Led collaboration efforts with South Korean research teams for two years to formulate samples and complete testing}
         \resumeItem{Collected over 150 trials of data and was awarded the Yale Outstanding Project award at RSEF in Spring of 2023}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-
-
 
 %-------------------------------------------
 \end{document}
