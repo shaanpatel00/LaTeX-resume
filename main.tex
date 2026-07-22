@@ -72,8 +72,15 @@
 % Replaced tabular environment with hfill for ATS linear reading
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \textbf{#1} \hfill #2 \\
+    \textbf{#1} \hfill #2 \vspace{-2pt}\\
     \textit{\resumesmall#3} \hfill \textit{\resumesmall #4}\par\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationSubheading}[5]{
+  \vspace{-2pt}\item
+    \textbf{#1} \hfill #2 \vspace{-3pt}\\
+    \textit{\resumesmall#3} \hfill \textit{\resumesmall #4} \vspace{-3pt}\\
+    \textit{\resumesmall#5}\par\vspace{-9pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -117,9 +124,10 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeEducationSubheading
       {Georgia Institute of Technology}{Atlanta, GA}
-      {Bachelor of Science in Computer Engineering; GPA: 3.59}{August 2023 -- December 2026}
+      {Bachelor of Science; GPA: 3.59}{August 2023 -- May 2027}
+      {Major in Computer Engineering, Minor in Applications of Artificial Intelligence and Machine Learning}
       \resumeItemListStart
         \resumeItem{Relevant Coursework: Data Structures and Algorithms, Embedded Systems Design, Advanced Microarchitecture Design}
         \resumeItem{Leadership: Captain of GT Ramblin' Raas, GTXR Executive Board, SiliconJackets Digital Design Team Lead}
