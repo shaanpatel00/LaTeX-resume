@@ -20,7 +20,6 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -32,7 +31,6 @@
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -43,8 +41,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
 
@@ -54,7 +52,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-11pt}\scshape\raggedright\large
+  \vspace{-13pt}\scshape\raggedright\large % Increased space above sections (was -16pt)
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -63,10 +61,9 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumesmall}{\fontsize{9pt}{11.2pt}\selectfont}
+
 \newcommand{\resumeItem}[1]{
-  \item\resumesmall{
-    {#1 \vspace{-2.75pt}}
-  }
+  \item\resumesmall{#1}
 }
 
 % Replaced tabular environment with hfill for ATS linear reading
@@ -99,18 +96,21 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Kept your updated itemsep=1pt
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, itemsep=1pt]}
+% Reduced the gap after the item list to pull the next subheading closer
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-9pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Shaan Patel} \\ \vspace{2pt}
+    \vspace{-10pt}
+    \textbf{\Huge \scshape Shaan Patel} \\ \vspace{2pt} % Changed \huge back to \Huge
     \small 571-439-9302 $|$ spatel3050@gatech.edu $|$ Ashburn, VA $|$ US Citizen $|$ shaanpatel00.github.io $|$ linkedin.com/in/shaanpatel00
 \end{center}
 
@@ -119,7 +119,6 @@
  \begin{itemize}[leftmargin=0.05in, label={}]
     \resumesmall{\item{Ambitious third-year Computer Engineering student specializing in computing hardware, VLSI design, and emerging architectures. Seeking a Fall 2026 or Spring 2027 internship in computer architecture, embedded systems, or hardware design to apply strong programming skills and an end-to-end approach to creating complex systems.}}
  \end{itemize}
-
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -134,7 +133,6 @@
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.05in, label={}]
@@ -148,10 +146,10 @@
     }}
  \end{itemize}
 
-
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+
     \resumeSubheading
       {AeroCore-V - Hardware-Accelerated SoC for Autonomous UAVs}{Atlanta, GA}
       {SiliconJackets Project Lead}{August 2025 -- Present}
@@ -188,10 +186,11 @@
       \resumeItemListStart
         \resumeItem{Synthesized a saline-soluble polymer as a novel alternative to currently used petrochemical-based plastics as a means of preventing marine pollution}
         \resumeItem{Modeled and fabricated 3D-generated molds using filament and resin printers for synthesizing hydrogels through incubation}
-        \resumeItem{Worked with a tensile tester to measure Young’s modulus and SEM electron microscopy to analyze sample composition}
+        \resumeItem{Worked with a tensile tester to measure Young's modulus and SEM electron microscopy to analyze sample composition}
         \resumeItem{Led collaboration efforts with South Korean research teams for two years to formulate samples and complete testing}
         \resumeItem{Collected over 150 trials of data and was awarded the Yale Outstanding Project award at RSEF in Spring of 2023}
       \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 %-------------------------------------------
