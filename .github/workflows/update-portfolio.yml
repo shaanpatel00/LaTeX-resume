@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Resume Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           path: resume-repo
 
       - name: Checkout Portfolio Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           repository: shaanpatel00/shaanpatel00.github.io
           token: ${{ secrets.PORTFOLIO_PAT }}
