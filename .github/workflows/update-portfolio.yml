@@ -1,0 +1,65 @@
+name: Update Resume in Portfolio
+
+on:
+  push:
+    branches:
+      - main # Adjust if your default branch is 'master'
+    paths:
+      - 'main.pdf' # Triggers only when the compiled PDF is updated
+
+jobs:
+  update-portfolio:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Resume Repository
+        uses: actions/checkout@v3
+        with:
+          path: resume-repo
+
+      - name: Checkout Portfolio Repository
+        uses: actions/checkout@v3
+        with:
+          repository: shaanpatel00/shaanpatel00.github.io
+          token: ${{ secrets.PORTFOLIO_PAT }}
+          path: portfolio-repo
+
+      - name: Archive Old Resume and Copy New
+        run: |
+          cd portfolio-repo
+          
+          # Define where the resume lives in your portfolio
+          # Change this to root "." or another folder if you don't use "public"
+          RESUME_DIR="public" 
+          ARCHIVE_DIR="archive/resumes"
+          
+          mkdir -p "$ARCHIVE_DIR"
+          mkdir -p "$RESUME_DIR"
+          
+          # Generate a timestamp for the archive
+          TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+          
+          # Move the existing resume to the archive folder if it exists
+          if [ -f "$RESUME_DIR/Shaan Patel Resume.pdf" ]; then
+            mv "$RESUME_DIR/Shaan Patel Resume.pdf" "$ARCHIVE_DIR/Shaan Patel Resume_${TIMESTAMP}.pdf"
+          fi
+          
+          # Copy the newly compiled PDF from the resume repo and rename it
+          cp ../resume-repo/main.pdf "$RESUME_DIR/Shaan Patel Resume.pdf"
+          
+      - name: Commit and Push to Portfolio
+        run: |
+          cd portfolio-repo
+          
+          # Configure Git as a bot
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add .
+          
+          # Only commit if there are actual changes
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "chore: Automate resume update and archive previous version"
+            git push origin main # Adjust to 'master' if necessary
+          else
+            echo "No changes to commit."
+          fi
