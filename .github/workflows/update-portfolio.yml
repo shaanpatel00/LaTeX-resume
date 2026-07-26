@@ -39,12 +39,12 @@ jobs:
           TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
           
           # Move the existing resume to the archive folder if it exists
-          if [ -f "$RESUME_DIR/Shaan Patel Resume.pdf" ]; then
-            mv "$RESUME_DIR/Shaan Patel Resume.pdf" "$ARCHIVE_DIR/Shaan Patel Resume_${TIMESTAMP}.pdf"
+          if [ -f "$RESUME_DIR/Shaan_Patel_Resume.pdf" ]; then
+            mv "$RESUME_DIR/Shaan_Patel_Resume.pdf" "$ARCHIVE_DIR/Shaan_Patel_Resume_${TIMESTAMP}.pdf"
           fi
           
           # Copy the newly compiled PDF from the resume repo and rename it
-          cp ../resume-repo/main.pdf "$RESUME_DIR/Shaan Patel Resume.pdf"
+          cp ../resume-repo/main.pdf "$RESUME_DIR/Shaan_Patel_Resume.pdf"
           
       - name: Commit and Push to Portfolio
         run: |
