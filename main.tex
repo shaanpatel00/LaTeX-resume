@@ -57,22 +57,27 @@
 }
 
 % Replaced tabular environment with hfill for ATS linear reading
+% \rightskip=0pt locally cancels the infinite stretch that \raggedright adds at
+% the line end, so \hfill (not \rightskip) absorbs all the slack and the right-
+% hand text lands flush with the other rows regardless of how long the left text is.
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
+  {\rightskip=0pt plus 0pt
     \textbf{#1} \hfill #2 \vspace{-2pt}\\
-    \textit{\resumesmall#3} \hfill \textit{\resumesmall #4}\par\vspace{-7pt}
+    \textit{\resumesmall#3} \hfill \textit{\resumesmall #4}\par}\vspace{-7pt}
 }
 
-\newcommand{\resumeEducationSubheading}[5]{
+\newcommand{\resumeEducationSubheading}[6]{
   \vspace{-2pt}\item
-    \textbf{#1} \hfill #2 \vspace{-3pt}\\
-    \textit{\resumesmall#3} \hfill \textit{\resumesmall #4} \vspace{-3pt}\\
-    \textit{\resumesmall#5}\par\vspace{-9pt}
+    \textbf{#1} \hfill #2 \par\vspace{-6pt}
+    \textit{\resumesmall#3} \hfill \textit{\resumesmall#4} \par\vspace{-7pt}
+    \textit{\resumesmall#5} \hfill \textit{\resumesmall#6}\par\vspace{-9pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \textit{\resumesmall#1} \hfill \textit{\resumesmall #2}\par\vspace{-7pt}
+  {\rightskip=0pt plus 0pt
+    \textit{\resumesmall#1} \hfill \textit{\resumesmall #2}\par}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
@@ -98,25 +103,27 @@
 %----------HEADING----------
 \begin{center}
     \vspace{-10pt}
-    \textbf{\Huge \scshape Shaan Patel} \\ \vspace{2pt}
-    \small 571-439-9302 $|$ spatel3050@gatech.edu $|$ Ashburn, VA $|$ US Citizen $|$ \href{https://shaanpatel00.github.io}{shaanpatel00.github.io} $|$ \href{https://linkedin.com/in/shaanpatel00}{linkedin.com/in/shaanpatel00}
+    \textbf{\Huge \scshape Shaan Patel} \\ \vspace{3pt}
+    \scriptsize (571) 439-9302 \textbar{} spatel3050@gatech.edu \textbar{} Ashburn, VA \textbar{} US Citizen \textbar{} \href{https://shaanpatel00.github.io}{https://shaanpatel00.github.io} \textbar{} \href{https://linkedin.com/in/shaanpatel00}{https://www.linkedin.com/in/shaanpatel00} \\ \vspace{-1pt}
 \end{center}
 
 %-----------OBJECTIVE-----------
 \section{Objective}
  \begin{itemize}[leftmargin=0.05in, label={}]
-    \resumesmall{\item{Ambitious third-year Computer Engineering student specializing in computing hardware, VLSI design, and emerging architectures. Seeking a Fall/Spring internship in computer architecture, embedded systems, or hardware design to apply strong programming skills and an end-to-end approach to creating complex systems.}}
+    \resumesmall{\item{Ambitious third-year Computer Engineering student specializing in RTL design, functional verification, and micro-architectures. Seeking a design/verification internship to apply expertise in SystemVerilog RTL implementation, UVM/SVA verification, and EDA synthesis and tool flows to create high performance silicon systems.}}
  \end{itemize}
 
+%-----------EDUCATION-----------
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeEducationSubheading
       {Georgia Institute of Technology}{Atlanta, GA}
-      {Bachelor of Science - GPA: 3.57; Master of Science in ECE}{May 2028}
-      {Major in Computer Engineering, Minor in Applications of Artificial Intelligence and Machine Learning}
+      {Bachelor of Science in Computer Engineering}{August 2023 -- May 2027}
+      {Master of Science in Electrical and Computer Engineering}{August 2027 -- May 2028}
       \resumeItemListStart
-        \resumeItem{Relevant Coursework: Data Structures and Algorithms, Embedded Systems Design, Advanced Microarchitecture Design}
+        \resumeItem{{Minor:} Applications of Artificial Intelligence and Machine Learning \textbar{} {GPA:} 3.57} \vspace{-2pt}
+        \resumeItem{Relevant Coursework: Data Structures and Algorithms, Embedded Systems Design, Advanced Microarchitecture Design} \vspace{-2pt}
         \resumeItem{Leadership: Captain of GT Ramblin' Raas, GTXR Executive Board, SiliconJackets Digital Design Team Lead}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -125,12 +132,12 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \resumesmall{\item{
-      \textbf{Programming}{: C++, Verilog, C, VHDL, RISC-V, SystemVerilog, OpenGL, Python, Java, JavaScript, HTML/CSS, SQL, LaTeX} \\[1pt]
+      \textbf{Verification}{: UVM, SVA, Functional Testing , Coverage Analysis, RTL Simulation \& Debug, Logic Synthesis, Place \& Route (P\&R)} \\[1pt]
+      \textbf{Programming}{: C++, Verilog, C, VHDL, RISC-V, SystemVerilog, OpenGL, Python, Java, JavaScript, Tcl, Perl, Shell Scripting} \\[1pt]
       \textbf{Platforms}{: Linux (Ubuntu, Slackware, Debian), Red Hat (OpenStack, CloudForms), OpenVMS, Solaris, Windows, MacOS} \\[1pt]
-      \textbf{Hardware}{: FPGA, ESP32, IC Breadboard Circuits, Oscilloscope, Arduino, Raspberry Pi, ARM MBED, LaunchPad, 3D Printing} \\[1pt]
+      \textbf{Hardware}{: FPGA, ESP32, IC Breadboard Circuits, Oscilloscope, Arduino, Raspberry Pi, ARM MBED, Logic Analyzer} \\[1pt]
       \textbf{Frameworks}{: React, SFML, CUDA, PyTorch, AWS (S3, DynamoDB, EC2), Express, MongoDB, Pandas, Node.js, Kubernetes} \\[1pt]
-      \textbf{Software}{: KiCAD, Altium, Cadence, Intel Altera Quartus II, LTspice, NI LabVIEW, gRPC, TCP/UDP Tunnels, Blender, Autodesk Fusion 360/AutoCAD, SolidWorks, Onshape, Visual Studio Code, GitHub, Wireshark, Adobe Creative Suite, Inkscape, Slack} \\[1pt]
-      \textbf{Communication}{: Design proposals, technical reports, instruction manuals, presentations, email correspondence, training materials}
+      \textbf{Software}{: KiCAD, Altium, Cadence Virtuoso, Intel Altera Quartus II, LTspice, Verilator, gRPC, Blender, Autodesk Fusion 360/AutoCAD, SolidWorks, Onshape, Visual Studio Code, GitHub, Wireshark, Adobe Creative Suite, Inkscape, Slack}
     }}
  \end{itemize}
 
@@ -142,10 +149,11 @@
       {\href{https://github.com/shaanpatel00/AeroCore-V}{AeroCore-V -- Hardware-Accelerated SoC for Autonomous UAVs}}{Atlanta, GA}
       {SiliconJackets Project Lead}{August 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{Designed an open-source RISC-V SoC compliant with RV32I ISA standards in SystemVerilog with custom ALU extensions for single-cycle PID control math, tailored for low-latency flight adjustments on a DE10 validated with Intel Quartus Prime}
+        \resumeItem{Designed RTL for an open-source RISC-V SoC in SystemVerilog with custom ALU extensions for single-cycle PID control math}
         \resumeItem{Integrated a direct-mapped, 4KB L1 cache handling high-frequency I2C/SPI GPS and IMU data streams to reduce stalls by 52\% (measured via a custom Verilator cycle-accurate harness), while developing a 4-way L2 controller with LRU replacement}
         \resumeItem{Developing a virtual memory system with Page Table Walker and TLB to isolate flight routines and protect from page faults, utilizing Github Actions CI/CD pipelines to automate regression testing and cycle-accurate simulations}
         \resumeItem{Prototyped a priority-based thread scheduler to manage UAV flight loops and telemetry tasks, alongside an OpenGL Digital Twin physics simulator in C++ to validate future flight latency reductions}
+        \resumeItem{Validated logic synthesis and PPA analysis on Intel DE10 FPGAs with Intel Quartus Prime and authored SystemVerilog Assertions (SVA) and functional testbenches in Verilator to perform coverage analysis and debug RTL logic failures}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -163,7 +171,7 @@
       {BlendFarm Project Leader}{June 2022 -- July 2025}
       \resumeItemListStart
         \resumeItem{Assembled two 2.5kW parallel computing systems from the component level, integrating twelve 12GB GDDR6 GPUs and modifying voltage curves to bypass LHR limiters, achieving a 73\% hash rate improvement}
-        \resumeItem{Overcame thermal throttling by designing and CNC-fabricating monolithic aluminum water blocks with Solidworks to cool a 6-GPU array, reducing core temperatures by over 15$^\circ$C under sustained 100\% load}
+        \resumeItem{Overcame data mesh faults using Tcl and Bash automations to schedule distributed compute workloads across cluster nodes}
         \resumeItem{Scripted a distributed render farm using C++ and SFML to coordinate large ray tracing frame rendering across a network}
         \resumeItem{Optimized task allocation using TCP/UDP socket tunnels and a custom jitter buffer implementation to ensure reliable data synchronization between the master node and rendering clients for faster computer graphics generation}
       \resumeItemListEnd
@@ -172,7 +180,7 @@
       {Academy of Science International Research}{Ashburn, VA}
       {Research Collaborator}{November 2022 -- July 2024}
       \resumeItemListStart
-        \resumeItem{Synthesized a saline-soluble polymer as a novel alternative to currently used petrochemical-based plastics as a means of preventing marine pollution}
+        \resumeItem{Synthesized a novel saline-soluble polymer alternative to general petrochemical plastics as a means of preventing marine pollution}
         \resumeItem{Modeled and fabricated 3D-generated molds using filament and resin printers for synthesizing hydrogels through incubation}
         \resumeItem{Worked with a tensile tester to measure Young's modulus and SEM electron microscopy to analyze sample composition}
         \resumeItem{Led collaboration efforts with South Korean research teams for two years to formulate samples and complete testing}
