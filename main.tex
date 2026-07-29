@@ -110,7 +110,7 @@
 %-----------OBJECTIVE-----------
 \section{Objective}
  \begin{itemize}[leftmargin=0.05in, label={}]
-    \resumesmall{\item{Ambitious third-year Computer Engineering student specializing in RTL design, functional verification, and micro-architectures. Seeking a design/verification internship to apply expertise in SystemVerilog RTL implementation, UVM/SVA verification, and EDA synthesis and tool flows to create high performance silicon systems.}}
+    \resumesmall{\item{Ambitious third-year Computer Engineering student specializing in RTL design, low-latency FPGA design, and micro-architectures. Seeking an FPGA engineering internship to apply expertise in SystemVerilog RTL implementation, networking hardware integration, and EDA synthesis and tool flows to create high performance silicon systems.}}
  \end{itemize}
 
 %-----------EDUCATION-----------
@@ -132,10 +132,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \resumesmall{\item{
+      \textbf{Hardware}{: FPGA, ESP32, I2C, SPI, IC Breadboard Circuits, Oscilloscope, Arduino, Raspberry Pi, ARM MBED, Logic Analyzer} \\[1pt]
       \textbf{Verification}{: UVM, SVA, Functional Testing , Coverage Analysis, RTL Simulation \& Debug, Logic Synthesis, Place \& Route (P\&R)} \\[1pt]
-      \textbf{Programming}{: C++, Verilog, C, VHDL, RISC-V, SystemVerilog, OpenGL, Python, Java, JavaScript, Tcl, Perl, Shell Scripting} \\[1pt]
+      \textbf{Programming}{: C++, SystemVerilog, C, VHDL, RISC-V, Verilog, OpenGL, Python, Java, JavaScript, Tcl, Perl, Shell Scripting} \\[1pt]
       \textbf{Platforms}{: Linux (Ubuntu, Slackware, Debian), Red Hat (OpenStack, CloudForms), OpenVMS, Solaris, Windows, MacOS} \\[1pt]
-      \textbf{Hardware}{: FPGA, ESP32, IC Breadboard Circuits, Oscilloscope, Arduino, Raspberry Pi, ARM MBED, Logic Analyzer} \\[1pt]
       \textbf{Frameworks}{: React, SFML, CUDA, PyTorch, AWS (S3, DynamoDB, EC2), Express, MongoDB, Pandas, Node.js, Kubernetes} \\[1pt]
       \textbf{Software}{: KiCAD, Altium, Cadence Virtuoso, Intel Altera Quartus II, LTspice, Verilator, gRPC, Blender, Autodesk Fusion 360/AutoCAD, SolidWorks, Onshape, Visual Studio Code, GitHub, Wireshark, Adobe Creative Suite, Inkscape, Slack}
     }}
@@ -149,11 +149,11 @@
       {\href{https://github.com/shaanpatel00/AeroCore-V}{AeroCore-V -- Hardware-Accelerated SoC for Autonomous UAVs}}{Atlanta, GA}
       {SiliconJackets Project Lead}{August 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{Designed RTL for an open-source RISC-V SoC in SystemVerilog with custom ALU extensions for single-cycle PID control math}
+        \resumeItem{Designed RTL for an open-source RISC-V SoC in SystemVerilog with custom single-cycle ALU extensions for single-cycle PID control math to achieve low-latency, nanosecond response times for UAV flight loops}
         \resumeItem{Integrated a direct-mapped, 4KB L1 cache handling high-frequency I2C/SPI GPS and IMU data streams to reduce stalls by 52\% (measured via a custom Verilator cycle-accurate harness), while developing a 4-way L2 controller with LRU replacement}
         \resumeItem{Developing a virtual memory system with Page Table Walker and TLB to isolate flight routines and protect from page faults, utilizing Github Actions CI/CD pipelines to automate regression testing and cycle-accurate simulations}
         \resumeItem{Prototyped a priority-based thread scheduler to manage UAV flight loops and telemetry tasks, alongside an OpenGL Digital Twin physics simulator in C++ to validate future flight latency reductions}
-        \resumeItem{Validated logic synthesis and PPA analysis on Intel DE10 FPGAs with Intel Quartus Prime and authored SystemVerilog Assertions (SVA) and functional testbenches in Verilator to perform coverage analysis and debug RTL logic failures}
+        \resumeItem{Validated and targeted high-speed hardware designs on Intel DE10 FPGAs with Intel Quartus Prime and authored SystemVerilog Assertions (SVA) and functional testbenches in Verilator to perform coverage analysis and debug RTL logic failures}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -173,7 +173,7 @@
         \resumeItem{Assembled two 2.5kW parallel computing systems from the component level, integrating twelve 12GB GDDR6 GPUs and modifying voltage curves to bypass LHR limiters, achieving a 73\% hash rate improvement}
         \resumeItem{Overcame data mesh faults using Tcl and Bash automations to schedule distributed compute workloads across cluster nodes}
         \resumeItem{Scripted a distributed render farm using C++ and SFML to coordinate large ray tracing frame rendering across a network}
-        \resumeItem{Optimized task allocation using TCP/UDP socket tunnels and a custom jitter buffer implementation to ensure reliable data synchronization between the master node and rendering clients for faster computer graphics generation}
+        \resumeItem{Optimized low-level networking routines via TCP/UDP socket interfaces and a custom jitter buffer implementation to ensure reliable data synchronization between the master node and rendering clients for faster computer graphics generation}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -182,7 +182,7 @@
       \resumeItemListStart
         \resumeItem{Synthesized a novel saline-soluble polymer alternative to general petrochemical plastics as a means of preventing marine pollution}
         \resumeItem{Modeled and fabricated 3D-generated molds using filament and resin printers for synthesizing hydrogels through incubation}
-        \resumeItem{Worked with a tensile tester to measure Young's modulus and SEM electron microscopy to analyze sample composition}
+        %\resumeItem{Worked with a tensile tester to measure Young's modulus and SEM electron microscopy to analyze sample composition}
         \resumeItem{Led collaboration efforts with South Korean research teams for two years to formulate samples and complete testing}
         \resumeItem{Collected over 150 trials of data and was awarded the Yale Outstanding Project award at RSEF in Spring of 2023}
       \resumeItemListEnd
