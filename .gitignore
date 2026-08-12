@@ -1,0 +1,10 @@
+# LaTeX Build Artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# macOS System Files
+.DS_Store
