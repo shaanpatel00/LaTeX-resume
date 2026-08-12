@@ -132,8 +132,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \resumesmall{\item{
-      \textbf{Programming}{: C++, Verilog, C, VHDL, RISC-V, SystemVerilog, OpenGL, Python, Java, JavaScript, Tcl, Perl, Shell Scripting} \\[1pt]
-      \textbf{Verification}{: UVM, SVA, Synopsys VCS, Coverage Analysis, RTL Simulation \& Debug, Logic Synthesis, Place \& Route (P\&R)} \\[1pt]
+      \textbf{Programming}{: SystemVerilog, Verilog, VHDL, RISC-V, C, C++, OpenGL, Python, Java, JavaScript, Tcl, Perl, Shell Scripting} \\[1pt]
+      \textbf{Hardware}{: FPGA, ESP32, IC Breadboards, Oscilloscope, Raspberry Pi, Logic Analyzer, NVM, GPIO interrupts, I2C, SPI, UART} \\[1pt]
+      \textbf{Frameworks}{: FreeRTOS, ARM MBED, Arduino, Pandas, SFML, CUDA, PyTorch, AWS (S3, DynamoDB, EC2), Kubernetes} \\[1pt]
+      \textbf{Verification}{: Synopsys VCS, UVM, SVA, Coverage Analysis, RTL Simulation \& Debug, Logic Synthesis, P\&R, Multimeters} \\[1pt]
       \textbf{Platforms}{: Linux (Ubuntu, Slackware, Debian), Red Hat (OpenStack, CloudForms), OpenVMS, Solaris, Windows, MacOS} \\[1pt]
       \textbf{Hardware}{: FPGA, VLSI, DRAM, Memory Systems, IC Breadboards, Oscilloscope, Raspberry Pi, ARM MBED, Logic Analyzer} \\[1pt]
       \textbf{Frameworks}{: React, SFML, CUDA, PyTorch, AWS (S3, DynamoDB, EC2), Express, MongoDB, Pandas, Node.js, Kubernetes} \\[1pt]
@@ -151,7 +153,7 @@
       \resumeItemListStart
         \resumeItem{Designed RTL for an open-source RISC-V SoC in SystemVerilog with custom ALU extensions for single-cycle PID control math}
         \resumeItem{Integrated a direct-mapped, 4KB L1 cache handling high-frequency I2C/SPI GPS and IMU data streams to reduce stalls by 52\% (measured via a custom Verilator cycle-accurate harness), while developing a 4-way L2 controller with LRU replacement}
-        \resumeItem{Developing a virtual memory system with Page Table Walker and TLB to isolate flight routines and protect from page faults, utilizing Github Actions CI/CD pipelines to automate regression testing and cycle-accurate simulations}
+        \resumeItem{Developing a virtual memory system with Page Table Walker and TLB to isolate flight routines and protect from page faults, utilizing Python and Github Actions CI/CD pipelines to automate regression testing and cycle-accurate simulations}
         \resumeItem{Prototyped a priority-based thread scheduler to manage UAV flight loops and telemetry tasks, alongside an OpenGL Digital Twin physics simulator in C++ to validate future flight latency reductions}
         \resumeItem{Validated logic synthesis and PPA analysis on Intel DE10 FPGAs with Intel Quartus Prime and authored SystemVerilog Assertions (SVA) and functional testbenches in Verilator to perform coverage analysis and debug RTL logic failures}
       \resumeItemListEnd
@@ -160,20 +162,20 @@
       {Georgia Tech HIVE Makerspace}{Atlanta, GA}
       {Student Leader and Volunteer}{August 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{Instruct $\sim$40 students per week on advanced design and fabrication workflows, including 3D CAD/slicing, circuit analysis with oscilloscopes, laser cutter operation, PCB design and manufacturing (taking a blank FR4 sheet to an operational PCB)}
+        \resumeItem{Instruct $\sim$40 students per week on advanced design and fabrication workflows, including 3D CAD/slicing, circuit analysis with oscilloscopes, laser cutter operation, KiCAD/Altium PCB design and manufacturing (taking a blank FR4 to an operational PCB)}
         \resumeItem{Deployed an open-source multi-device print manager to automate jobs on a FIFO basis, increasing the operational uptime of the free-to-use 12-unit Bambu Lab 3D print farm for the Georgia Tech student body}
         \resumeItem{Facilitate workshops and created training resources that contributed to a 20\% increase in student participation}
         \resumeItem{Architecting a full-stack inventory management system using an AWS RDS backend to track materials in the cloud with S3 and DynamoDB to enable a student electronics rental program, aiming to reduce annual student costs}
       \resumeItemListEnd
 
     \resumeSubheading
-      {High-Performance Heterogeneous Computing Infrastructure}{Ashburn, VA}
-      {BlendFarm Project Leader}{June 2022 -- July 2025}
+      {\href{https://github.com/shaanpatel00/ESP32-Fiber-Optic-Star-Map}{ESP32 Fiber Optic Star Map}}{Atlanta, GA}
+      {Sole Creator}{September 2025 -- December 2025}
       \resumeItemListStart
-        \resumeItem{Assembled two 2.5kW parallel computing systems from the component level, integrating twelve 12GB GDDR6 GPUs and modifying voltage curves to bypass LHR limiters, achieving a 73\% hash rate improvement}
-        \resumeItem{Overcame data mesh faults using Tcl and Bash automations to schedule distributed compute workloads across cluster nodes}
-        \resumeItem{Scripted a distributed render farm using C++ and SFML to coordinate large ray tracing frame rendering across a network}
-        \resumeItem{Optimized task allocation using TCP/UDP socket tunnels and a custom jitter buffer implementation to ensure reliable data synchronization between the master node and rendering clients for faster computer graphics generation}
+        \resumeItem{Scripted bare-metal C++ firmware for an ESP32 microcontroller, implementing non-volatile memory (NVM) drivers for state retention and hardware-debounced GPIO interrupt service routines (ISRs) for real-time control}
+        \resumeItem{Engineered ARGB PWM power distribution networks and modeled a custom enclosure in SolidWorks for thermal dissipation}
+        \resumeItem{Fabricated a custom ESP32 PCB designed with KiCad using a ProtoLaser, running SPICE circuit simulations and passing strict DRC and ERC verification to ensure clean trace routing and signal integrity}
+        \resumeItem{Executed hardware validation using oscilloscopes and multimeters to characterize transient voltage drop under 100\% LED load}
       \resumeItemListEnd
 
     \resumeSubheading
